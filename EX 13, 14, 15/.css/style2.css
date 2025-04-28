@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0e2646;
+    color: white;
+    padding: 2rem;
+}
+
+img {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recursos {
+    margin: 30px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.contagem {
+    margin: 40px 0;
+}
+
+time {
+    font-size: 2em;
+    color: red;
+    animation: piscar 1s infinite;
+}
+
+.tempo {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #1d3557;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#horas {
+    animation: contagemRegressiva 1s infinite;
+}
+
+#minutos {
+    animation: contagemRegressiva 1.5s infinite;
+}
+
+#segundos {
+    animation: contagemRegressiva 2s infinite;
+}
+
+@keyframes contagemRegressiva {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+form {
+    margin: 40px 0;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

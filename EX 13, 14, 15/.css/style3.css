@@ -1,0 +1,41 @@
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+    background-color: #6e6b6b;
+    padding: 30px;
+ }
+
+h1 {
+    text-align: center;
+}
+.equipe{
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.membro img{
+    width: 55%;
+    height: 55%;
+    border-radius: 100%;
+
+}
+
+.equipe p{
+    text-align: center;
+}
+.membro{
+    background-color: #ffffff;
+    padding: 26px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+
+
+
+}
+
+.membro:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
