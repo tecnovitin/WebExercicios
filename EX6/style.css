@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4dfdf;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #045a01;
+    color: white;
+    padding: 20px;
+      
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.897);
+    margin-left: 410px;
+    font-size: 20px;
+  }
+
+.faq {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+details {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+summary {
+    font-size: 1.15em;
+    font-weight: 600;
+    cursor: pointer;  
+    list-style: none;   
+    position: relative;
+    padding-right: 25px;
+}
+
+summary::after {         /* animacao */
+    content: "▶";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+
+details[open] summary::after {     /* gira quando abre    */
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.deatlhe {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+
+
